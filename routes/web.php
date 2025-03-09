@@ -2,8 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\AuthController;
 use App\Http\Middleware\RedirectIfAuthenticated;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DepartmentsController;
+use App\Http\Controllers\EmployeesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,9 +27,8 @@ Route::middleware(RedirectIfAuthenticated::class)->group(function () {
 });
 
 Route::middleware('auth')->group(function () {
-    Route::get('/department', function () {
-        return view('department');
-    })->name('department');
+    Route::resource('department', DepartmentsController::class);
+    Route::resource('employee', EmployeesController::class);
 
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 });

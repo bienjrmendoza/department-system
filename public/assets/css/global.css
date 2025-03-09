@@ -11,12 +11,18 @@
     cursor: pointer;
     background-color: #fff;
 }
-.department-card:hover {
+
+/* .department-card:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
     background-color: #f8f9fa;
-}
+} */
+
 .department-card .card-body {
-    text-align: center;
     font-weight: bold;
+}
+
+.data-card {
+    min-width: 900px;
+    min-height: 580px;
 }

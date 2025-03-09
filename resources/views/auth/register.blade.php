@@ -13,7 +13,7 @@
                     <div class="card-body">
                         @if ($errors->any())
                             <div class="alert alert-danger">
-                                We encountered some issues with your submission. Please review the errors and try again. Thank you!
+                                <p>We encountered some issues with your submission. Please review the errors and try again. Thank you!</p>
                             </div>
                         @endif
                         <form method="POST" action="{{ route('register') }}">
