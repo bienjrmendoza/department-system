@@ -84,6 +84,7 @@
                                 </div>
                                 <div class="col-12">
                                     <button type="submit" class="btn btn-primary w-100 fw-semibold mt-3">REGISTER</button>
+                                    <p class="text-muted text-sm text-center mt-3">Already have an account? <a href="{{ route('login') }}" class="text-decoration-none">Login</a></p>
                                 </div>
                             </div>
                         </form>
